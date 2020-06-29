@@ -52,7 +52,7 @@
 (setq visible-bell t)
 (setq inhibit-startup-message t)
 (mouse-avoidance-mode 'animate)
-(setq default-tab-width 2)
+(setq default-tab-width 4)
 (setq-default indent-tabs-mode t)
 (blink-cursor-mode 0)
 (tool-bar-mode 0)
@@ -85,7 +85,7 @@
 
 ;; Set Frame width/height
 (setq default-frame-alist '((top . 25) (left . 725) (width . 130) (height . 90)))
-(set-face-attribute 'default nil :height 130)
+(set-face-attribute 'default nil :height 140)
 (set-fontset-font "fontset-default" 'gb18030 '("Microsoft YaHei" . "unicode-bmp"))
 
 (set-face-background 'mode-line "#4466aa")
@@ -209,8 +209,16 @@ move the point to the first non-space character, if it exists."
 ;;      (compile (concat "java " (file-name-sans-extension buf)))
 ;;      )))
  
+(global-set-key [f5] 'quickrun-shell)
 
-
+;;(add-to-list 'load-path
+;;              "~/.emacs.d/plugins/yasnippet")
+;;(require 'yasnippet)
+;;(yas-global-mode 1)
+(add-to-list 'load-path
+              "~/.emacs.d/plugins/template-3.3b")
+(require 'template)
+(global-set-key (kbd "C-x C-a") 'template-new-file)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -219,7 +227,7 @@ move the point to the first non-space character, if it exists."
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (gradle-mode spacemacs-theme ws-butler which-key use-package smex multiple-cursors ido-vertical-mode ido-completing-read+ helm-swoop helm-projectile gtags flycheck flx-ido expand-region counsel beacon ag))))
+    (java-snippets yasnippet-classic-snippets yasnippet-snippets yatemplate quickrun gradle-mode spacemacs-theme ws-butler which-key use-package smex multiple-cursors ido-vertical-mode ido-completing-read+ helm-swoop helm-projectile gtags flycheck flx-ido expand-region counsel beacon ag))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
