@@ -1,0 +1,107 @@
+   80  emacs README.md
+   89  locate emacs
+   91  locate emacs
+   92  emacs --version
+   93  brew uninstall emacs
+   94  brew cask uninstall emacs
+   96  emacs
+  102  rm .emacs
+  103  rm .emacs.d
+  104  rm .emacs~
+  105  rm .emacs.d
+  106  rmdir .emacs.d
+  107  sudo rmdir  --ignore-fail-on-non-empty .emacs.d
+  112  emacs
+  114  cd .emacs.d
+  117  brew install emacs
+  119  where emacs
+  120  brew uninstall emacs
+  123  brew cask install emacs
+  472  cd .emacs.d
+  478  git clone https://github.com/emacs-jp/replace-colorthemes.git
+  490  cd .emacs.d
+  493  curl https://github.com/jesus-ramos/emacs/blob/master/midnight-theme.el
+  496  curl -LO https://github.com/jesus-ramos/emacs/blob/master/midnight-theme.el
+  519  git clone https://github.com/emacs-jp/replace-colorthemes.git
+  522  cd .emacs
+  523  cd .emacs.d
+  526  touch emacs.txt
+  530  mv .emacs emacs.txt
+  533  code emacs.txt
+  536  emacs --debug-init
+  539  emacs --debug -init
+  541  mv emacs.txt
+  542  rm emacs.txt
+  544  e .emacs
+  546  cd .emacs.d/auto-save-list
+  561  cd .emacs.d
+  564  git clone https://github.com/justbur/emacs-which-key
+  567  rm -rf emacs-which-key
+  571  git clone https://github.com/justbur/emacs-which-key
+  573  cd emacs-which-key
+  580  git clone https://github.com/nashamri/spacemacs-theme#:~:text=Spacemacs%20theme%20is%20an%20Emacs,well%20with%20256%20color%20terminals.
+  581  git clone https://github.com/nashamri/spacemacs-theme#:~:text=Spacemacs%20theme%20is%20an%20Emacs,well%20with%20256%20color%20terminals.
+  583  git clone https://github.com/nashamri/spacemacs-theme
+  586  cd spacemacs-theme
+  599  git clone https://github.com/nabeix/emacs-font-size
+  601  brew install emacs-goodies-el
+  639  rm -rf emacs-which-key
+  659  cd .emacs.d/
+  823  e emacs.txt
+  825  rm emacs.txt
+  837  mv ~/.emacs ./
+  869  mv .emacs ~/
+  870  emacs
+  895  emacs
+  903  cp .emacs ~/
+  906  cd .emacs.d
+  910  cd .emacs.d
+  923  emacs
+  925  emacs
+  964  emacs
+ 1001  emacs
+ 1027  emacs
+ 1145  brew cask update emacs
+ 1147  brew cask upgrade emacs
+ 1148  brew cask reinstall emacs
+ 1156  brew cask install emacs
+ 1157  brew cask reinstall emacs
+ 1158  emacs
+ 1160  sudo emacs
+ 1161  brew cask uninstall emacs
+ 1162  brew cask install emacs
+ 1163  sudo emacs
+ 1164  where emacs
+ 1165  /usr/local/bin/emacs
+ 1166  sudo chown root:root /usr/local/bin/emacs
+ 1168  sudo chown root:fengbo /usr/local/bin/emacs
+ 1169  sudo chown fengbo:root /usr/local/bin/emacs
+ 1170  sudo chown root:root /usr/local/bin/emacs
+ 1173  sudo chown :fengbo /usr/local/bin/emacs
+ 1174  sudo chown :admin /usr/local/bin/emacs
+ 1175  sudo chmod 4755 /usr/local/bin/emacs
+ 1177  emacs
+ 1178  sudo emacs
+ 1254  emacs
+ 1255  sudo emacs
+ 1256  emacs
+ 1293  sudo emacs
+ 1296  sudo emacs
+ 1325  sudo emacs
+ 1866  history | grep emacs
+ 1867  history | grep emacs 
+ 1868  history | grep emacs | less
+ 1869  where emacs
+ 1870  type emacs
+ 1871  sudo emacs
+ 1881  cp ~/.emacs .emacs | less
+ 1883  less ~/.emacs
+ 1886  cp ~/.emacs.d/ .
+ 1887  cp -f ~/.emacs.d/ .
+ 1889  cp -R ~/.emacs.d/ .
+ 1928  cp ~/.emacs .emacs
+ 1931  cp ~/.emacs.d .emacs.d
+ 1932  cp -R ~/.emacs.d .emacs.d
+ 1935  cd .emacs.d
+ 1942  git commit -am "added emacs directory\n"
+ 1956  git commit -m "added .emacs dir"
