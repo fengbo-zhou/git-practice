@@ -3,6 +3,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Emacs package management
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq byte-compile-warnings '(cl-functions))
 (setq package-archives '(("melpa" . "http://melpa.org/packages/")
                          ("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")))
@@ -43,11 +44,7 @@
 (which-key-mode)
 
 ;;setting up theme
-;(add-to-list 'load-path "~/.emacs.d/list-packages/spacemacs-theme")
-;;(require 'spacemacs-dark-theme)
-;;(add-to-list 'load-path "~/.emacs.d/list-packages/dakrone-theme")
-(require 'dakrone-theme)
-;;(require 'spacemacs-theme)
+(load-theme 'dracula t)
 
 (setq visible-bell t)
 (setq inhibit-startup-message t)
@@ -161,7 +158,7 @@
 (defadvice kill-line (before check-position activate)
   (if (member major-mode
               '(emacs-lisp-mode scheme-mode lisp-mode
-                                c-mode c++-mode objc-mode js-mode
+                                c-mode c++-mode objc-mode js-mode java-mode
                                 latex-mode plain-tex-mode))
       (if (and (eolp) (not (bolp)))
           (progn (forward-char 1)
@@ -226,8 +223,7 @@ move the point to the first non-space character, if it exists."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   (quote
-    (java-snippets yasnippet-classic-snippets yasnippet-snippets yatemplate quickrun gradle-mode spacemacs-theme ws-butler which-key use-package smex multiple-cursors ido-vertical-mode ido-completing-read+ helm-swoop helm-projectile gtags flycheck flx-ido expand-region counsel beacon ag))))
+   '(dracula-theme java-snippets yasnippet-classic-snippets yasnippet-snippets yatemplate quickrun gradle-mode spacemacs-theme ws-butler which-key use-package smex multiple-cursors ido-vertical-mode ido-completing-read+ helm-swoop helm-projectile gtags flycheck flx-ido expand-region counsel beacon ag)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
